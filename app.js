@@ -1,17 +1,19 @@
-// Шаблонные строки
-const projectName = "Сайт магазина";
-const price = 2000;
-const author = "Василий Пупкин";
+// Преобразование типов
 
-const template = author + " заказал " + projectName + " по цене " + price + "$";
-console.log(template);
+const age = "18";
+console.log(Number(age) + 5);
 
-const template2 = `${author} заказал ${projectName} по цене ${price}$`;
-console.log(template2);
+const _age = 19;
+console.log(String(_age) + age);
 
-const template3 = "Проект \n" + "Цена: " + price + "$";
-console.log(template3);
+// Если js видит + производит конкатенацию если - / * то математическую операцию
 
-const template4 = `Проект
-Цена: ${price}$`;
-console.log(template4);
+const userName = "Вася";
+console.log(Number(userName) + 5);
+console.log(typeof NaN);
+console.log(Boolean(0)); // Все числа не явл. 0 будут true
+console.log(Boolean("ssssdf"));
+console.log(Boolean(""));
+
+const a = 2 + "10";
+console.log(a - 10);
