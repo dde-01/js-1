@@ -1,15 +1,26 @@
-// Порядок операторов. Выполняется от большего к меньшему
+/* Типы данных
+2 типа: Объекты и Примитивы
+Примитивные
+числа
+строки
+true или false
+не заданное значение undefined*/
 
-const isSuited = 100 - 10 > 90 - 5;
-console.log(isSuited);
+/* let data = null; - Пустое значение */
+/* const admin = Symbol('Admin'); - Уникальное неизменное значение */
+/* const big = BigInt(999999999999999999999999999); - Работа с большими числами */
 
-// 100 - (11) 10 > (9) 90 - 5
+let a = 5;
+let b = 5.6;
+a = "строка";
+console.log(typeof a);
+let isAdmin = a > 10;
+console.log(typeof isAdmin);
 
-const a = (6 + 10) / 2;
-console.log(a);
-
-let b;
 let c;
-c = b = 100 + 50 + 30;
-console.log(c);
-console.log(b);
+console.log(typeof c);
+c = 5;
+console.log(typeof c);
+
+let d = null;
+console.log(typeof (d == null));
