@@ -1,50 +1,17 @@
-// Switch отлично использовать когда имеем много вариантов он проверяет всегда строгое равенство
+const bmwX3 = 100000;
+const fordFocusPrice = 10000;
+const budget = 20000;
 
-const role = prompt("login:");
+let message;
 
-if (role === "manager") {
-  console.log("Manager");
-} else if (role === "admin") {
-  console.log("Admin");
-} else if (role === "ceo") {
-  console.log("CEO");
+if (budget > bmwX3) {
+  message = "BMW";
+} else if (budget > fordFocusPrice) {
+  message = "Ford";
 } else {
-  console.log("not authorized");
+  message = "Ты нищий";
 }
+// Тернарные операторы
+10 > 0 ? console.log("Больше 0") : console.log("Не больше");
 
-switch (role) {
-  case "manager":
-    console.log("Manager");
-    break;
-  case "admin":
-    console.log("Admin");
-    break;
-  case "ceo":
-    console.log("CEO");
-    break;
-  default:
-    console.log("not authorized");
-}
-switch (role) {
-  case "manager":
-  case "admin":
-    console.log("Не руководитель");
-    break;
-  case "ceo":
-    console.log("Руководитель");
-    break;
-  default:
-    console.log("not authorized");
-}
-
-const num = 1;
-switch (true) {
-  case num > 0:
-    console.log("Положительный");
-    break;
-  case num < 0:
-    console.log("Отрицательный");
-    break;
-  default:
-    console.log("Ноль!");
-}
+console.log(`Я хочу купить ${message}`);
