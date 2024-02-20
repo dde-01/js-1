@@ -1,12 +1,14 @@
-// Управление потоком
-// if else
+const deposit = 12000;
+const rate = 0.07;
+const depositLength = 24;
+const houseCost = 13500;
 
-const money = 100;
+const res = deposit * (1 + rate / 12) ** 24;
 
-if (money > 50) {
-  console.log("Может купить наш продукт");
-} else if (money > 55) {
-  console.log("Куплен мини продукт");
+if (res > houseCost) {
+  console.log(`Вы можете купить дом. Остаток: ${Math.round(res - houseCost)}$`);
 } else {
-  console.log("Не может купить наш продукт");
+  console.log(
+    `Вы не можете купить дом. Не хватает: ${Math.round(houseCost - res)}$`
+  );
 }
