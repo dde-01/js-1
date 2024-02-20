@@ -1,14 +1,18 @@
-const deposit = 12000;
-const rate = 0.07;
-const depositLength = 24;
-const houseCost = 13500;
+// Операторы равенства
+// == не строгое равенство, когда проверяются только данные
+// === строгое, когда проверяются данные и тип
 
-const res = deposit * (1 + rate / 12) ** 24;
+const secretNumber = "7";
 
-if (res > houseCost) {
-  console.log(`Вы можете купить дом. Остаток: ${Math.round(res - houseCost)}$`);
-} else {
-  console.log(
-    `Вы не можете купить дом. Не хватает: ${Math.round(houseCost - res)}$`
-  );
+if (secretNumber === 7) {
+  console.log("Угадалго строго");
+}
+
+if (secretNumber == 7) {
+  console.log("Угадал не строго");
+}
+
+const q = prompt("Введите число");
+if (q == 7) {
+  console.log("Угадал не стого");
 }
